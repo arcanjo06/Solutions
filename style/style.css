@@ -4,10 +4,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: #1e3a8a; /* Azul escuro da navbar */
+  --color-secondary: #facc15; /* Amarelo dourado */
+  --color-secondary-dark: #e0b70e; /* Amarelo dourado escuro (hover) */
+  --color-background: #e3ebf3; /* Fundo do body */
+  --color-box-bg: rgba(0, 0, 0, 0.6); /* Fundo da caixa principal */
+  --color-box-shadow: rgba(0, 0, 0, 0.3); /* Sombra da caixa */
+  --color-input-border: #ccc; /* Borda padrão dos inputs */
+  --color-input-focus: #4caf50; /* Verde para foco nos inputs */
+  --color-text-light: #fff; /* Texto branco */
+  --color-text-muted: #e2e8f0; /* Texto cinza claro */
+  --color-footer-bg: #0f2769; /* Fundo do footer e pre-footer */
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #e3ebf3;
-  
 }
 .navbar {
   position: fixed;
@@ -21,7 +34,6 @@ body {
   background-color: #1e3a8a; /* Azul escuro */
   color: white;
   font-family: "exo 2", sans-serif;
-  
 }
 
 /* Logo e menu alinhados à esquerda */
@@ -34,7 +46,7 @@ body {
 .navbar-logo {
   display: flex;
   align-items: center;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   gap: 10px;
   letter-spacing: 5px;
   font-weight: bold;
@@ -305,7 +317,7 @@ header * {
   border: none;
   padding: 12px 20px;
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
@@ -336,7 +348,7 @@ header * {
   padding: 20px;
   margin-top: 20px;
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: none;
   transition: all 0.8s ease-in-out;
 }
@@ -385,16 +397,16 @@ header * {
   text-align: center;
   font-size: 24px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .carrossel-institucional__slide h2 {
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 4rem;
   color: #dde6ff;
   margin-bottom: 20px;
 }
-.carrossel-institucional__slide img{
+.carrossel-institucional__slide img {
   width: 400px;
   height: 250px;
   border-radius: 10px;
@@ -402,7 +414,7 @@ header * {
 }
 
 .carrossel-institucional__slide p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 80%;
   font-size: 1.1rem;
   font-style: italic;
@@ -422,7 +434,7 @@ header * {
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 100%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
   transition: background-color 0.3s;
 }
@@ -451,7 +463,7 @@ header * {
   justify-content: center;
   font-family: "Exo 2", sans-serif;
 }
-.certifications a{
+.certifications a {
   text-decoration: none;
   color: inherit;
 }
@@ -462,7 +474,7 @@ header * {
   color: #041e64;
 }
 
-.certifications small{
+.certifications small {
   font-size: 20px;
   margin-bottom: 40px;
   color: #041e64bb;
@@ -531,9 +543,6 @@ header * {
   opacity: 1;
   max-height: 100px; /* Expande a imagem */
 }
-
-
-
 
 .pre-footer {
   background-color: #0f2769;
