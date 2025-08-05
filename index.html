@@ -42,8 +42,27 @@
       </div>
       <div class="navbar-buttons">
         <a href="#" class="navbar-button">Se Junte a Nós</a>
+
         <a href="#" class="navbar-button">Já sou Cliente</a>
+
         <a href="./html/Login.html" class="navbar-button">Login</a>
+      </div>
+      <span class="hamburguer-menu" id="openMenu">
+        <i class="fas fa-bars"></i>
+      </span>
+
+      <!-- Overlay com links de navegação -->
+      <div class="overlay" id="menuOverlay">
+        <span class="close-btn" id="closeMenu">&times;</span>
+        <ul class="overlay-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Se Junte a Nós</a></li>
+          <li><a href="#">Já sou Cliente</a></li>
+          <li><a href="./html/Login.html">Login</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -294,6 +313,18 @@
     </footer>
 
     <script>
+      const openMenu = document.getElementById("openMenu");
+      const closeMenu = document.getElementById("closeMenu");
+      const overlay = document.getElementById("menuOverlay");
+
+      openMenu.addEventListener("click", () => {
+        overlay.style.display = "flex";
+      });
+
+      closeMenu.addEventListener("click", () => {
+        overlay.style.display = "none";
+      });
+
       const botoes = document.querySelectorAll(".button");
       const descricao = document.getElementById("descricao");
       const tituloSolucao = document.getElementById("titulo-solucao");
