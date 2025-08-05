@@ -803,7 +803,7 @@ footer {
   .pre-footer-section {
     width: 100%;
     text-align: center;
-    max-height: 250px;
+    max-height: 150px;
   }
   .pre-footer-section::before{
     content: "";
